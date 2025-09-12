@@ -631,9 +631,9 @@ nav .fas{
     
     .scrolling-banner{
         height: 100px;
-        max-width: 300px;
+        max-width: 270px;
        width: 180%;
-      left: 340px;
+      left: 320px;
       top: 250px;
       border-radius: 12px;
       margin-top: 70px;
