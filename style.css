@@ -114,10 +114,10 @@ nav ul li a:hover::after{
         margin-left: 0;
   
   /* fade effect */
-  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-size: 100% 100%;
-  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
   mask-repeat: no-repeat;
   mask-size: 100% 100%;
   z-index: 5;  
