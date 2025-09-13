@@ -1,0 +1,20 @@
+{
+  "name": "Bala Jee Portfolio",
+  "short_name": "Portfolio",
+  "start_url": "https://balajee-web.netlify.app/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1976d2",
+  "icons": [
+    {
+      "src":"assets/pwaicon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/pwasmicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

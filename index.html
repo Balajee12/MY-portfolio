@@ -32,6 +32,8 @@
    
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/1c12915e9f.js" crossorigin="anonymous"></script>
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#1976d2">
 </head>
 
 <body> 
@@ -271,6 +273,13 @@
 <!-----------------------------------chatbot---------------------->
 <script>
 (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="-Tz5qw3olvgzMWE-oaj0K";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+</script>
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function() {
+      navigator.serviceWorker.register('service-worker.js');
+    });
+  }
 </script>
 </body>
 </html>
