@@ -37,22 +37,6 @@
 </head>
 
 <body> 
-<div id="scrolling-content">
-    <div class="scrolling-banner">
-        <div class="scrolling-content">
-        <img src="assets/slide1.jpg" alt="logo1">
-        <img src="assets/slide2.jpg" alt="logo2">
-        <img src="assets/slide3.png" alt="logo3">
-        <img src="assets/slide4.jpg" alt="logo4">
-        <img src="assets/slide5.jpg" alt="logo5">
-        <img src="assets/slide6.jpg" alt="logo1">
-        <img src="assets/slide7.jpg" alt="logo2">
-        <img src="assets/slide8.jpg" alt="logo3">
-        <img src="assets/slide9.png" alt="logo4">
-        <img src="assets/slide10.png" alt="logo5">
-        </div>
-    </div> 
-</div> 
 <div id="header">
     <div class="container">
         <nav>
@@ -66,17 +50,19 @@
                 <i class="fas fa-times" onclick="closemenu()"></i>
             </ul>
             <i class="fas fa-bars" onclick="openmenu()"></i>
-        </nav>
+        </nav>    
+        <div class="second-page">
+             <a href="second.html"><i class="fa-solid fa-right-to-bracket"></i></a>
+        </div>
         <div class="header-text">
-            <p>Software Developer</p>
             <h1>Hi, I'm <span>Bala Jee</span></h1>
-            <p>I am a software developer and a web designer</p></h1>
+            <p>I am a <span class="typing-text"></span></p></h1>
         </div>
         <div class="button">
             <a href="https://www.linkedin.com/in/bala-jee-01-" >Linkedin <i class="fa-brands fa-square-linkedin"></i></a>
         </div>
-    </div>
-</div>
+    </div>    
+</div>   
 <!-----------------------about--------------------->
 <div id="about">
     <div class="container">
@@ -191,10 +177,12 @@
                 <div class="social-icons">
                     <a href="https://www.linkedin.com/in/bala-jee-01-"><i class="fa-brands fa-square-linkedin"></i></a>
                     <a href="https://www.instagram.com/_balajee.in/"><i class="fa-brands fa-square-instagram"></i></a>
-                    <a href="https://www.facebook.com/profile.php?id=100023204435390"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="second.html"><i class="fa-brands fa-square-facebook"></i></a>
                     <a href="https://github.com/Balajee12"><i class="fa-brands fa-square-github"></i></a>
                 </div>
+                <div class="resume">
                 <a href="assets/resume.pdf" download class="btn btn2">CV<i class="fa-solid fa-download"></i></a>
+                </div>
             </div>
             <div class="contact-right">
                 <h4>Leave your message here<i class="fa-solid fa-arrow-down"></i></h4>
@@ -214,6 +202,41 @@
     </div>
 </div>
 </div>
+<script>
+    const typedTextSpan = document.querySelector(".typing-text");
+    const textArray = ["Software Developer.", "Web Designer.", "Graphic Designer.", "AI/ML Engineer."];
+    const typingDelay = 100;
+    const erasingDelay = 50;
+    const newTextDelay = 2000; // Delay between current and next text
+    let textArrayIndex = 0;
+    let charIndex = 0;
+
+    function type() {
+      if (charIndex < textArray[textArrayIndex].length) {
+        typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
+        charIndex++;
+        setTimeout(type, typingDelay);
+      } else {
+        setTimeout(erase, newTextDelay);
+      }
+    }
+
+    function erase() {
+      if (charIndex > 0) {
+        typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex - 1);
+        charIndex--;
+        setTimeout(erase, erasingDelay);
+      } else {
+        textArrayIndex++;
+        if (textArrayIndex >= textArray.length) textArrayIndex = 0;
+        setTimeout(type, typingDelay + 1100);
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", function () { // On DOM Load initiate the effect
+      if (textArray.length) setTimeout(type, newTextDelay + 250);
+    });
+</script>
 
 <script>
     var tablinks = document.getElementsByClassName("tab-links");

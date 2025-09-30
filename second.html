@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="second.css">
+    <script src="https://kit.fontawesome.com/1c12915e9f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+    <div class="container">
+        <nav>
+            <img src="assets/sitelogo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="index.html"><i class="fa-solid fa-backward"></i></a></li>
+        </nav>
+    </div>
+</div>  
+<div class="box">
+     <h2>Achievements</h2>
+</div>
+<div class="middle">
+    <img src="assets/aboutimg.webp">
+</div>
+<div id="scrolling-content">
+    <div class="scrolling-banner">
+        <div class="scrolling-content">
+        <img src="assets/slide1.jpg" alt="logo1">
+        <img src="assets/slide2.jpg" alt="logo2">
+        <img src="assets/slide3.png" alt="logo3">
+        <img src="assets/slide4.jpg" alt="logo4">
+        <img src="assets/slide5.jpg" alt="logo5">
+        <img src="assets/slide6.jpg" alt="logo1">
+        <img src="assets/slide7.jpg" alt="logo2">
+        <img src="assets/slide8.jpg" alt="logo3">
+        <img src="assets/slide9.png" alt="logo4">
+        <img src="assets/slide10.png" alt="logo5">
+        </div>
+    </div> 
+</div>
+
+<section class="skills">
+  <h2>My Skills</h2>
+
+  <div class="skill">
+    <p>HTML</p>
+    <div class="progress-bar">
+      <div class="progress-fill" data-width="90%">90%</div>
+    </div>
+  </div>
+
+  <div class="skill">
+    <p>CSS</p>
+    <div class="progress-bar">
+      <div class="progress-fill" data-width="80%">80%</div>
+    </div>
+  </div>
+
+  <div class="skill">
+    <p>JavaScript</p>
+    <div class="progress-bar">
+      <div class="progress-fill" data-width="75%">75%</div>
+    </div>
+  </div>
+
+  <div class="skill">
+    <p>Python</p>
+    <div class="progress-bar">
+      <div class="progress-fill" data-width="85%">85%</div>
+    </div>
+  </div>
+<div class="skill">
+    <p>C++</p>
+    <div class="progress-bar">
+      <div class="progress-fill" data-width="90%">90%</div>
+    </div>
+  </div>
+</section>
+<footer class="copyright">
+    <p>Bala Jee copyright © 2025. Crafted with ❤️</p>
+
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+  const fills = document.querySelectorAll('.progress-fill');
+
+  fills.forEach(fill => {
+    const width = fill.getAttribute('data-width');
+    fill.style.width = width;
+
+    // Animate again on hover
+    fill.parentElement.addEventListener('mouseenter', () => {
+      fill.style.width = '0';
+      setTimeout(() => {
+        fill.style.width = width;
+      }, 100);
+    });
+  });
+});
+</script>
+<script>
+(function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="-Tz5qw3olvgzMWE-oaj0K";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+</script>
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function() {
+      navigator.serviceWorker.register('service-worker.js');
+    });
+  }
+</script>
+</body>
+</html>
