@@ -473,22 +473,22 @@ nav .fas{
         
     }
     .header-text{
-        top: 130px;
+        top: 10px;
         font-size: 15px;
         font-weight: 600;
         color:#000000;
         left: 5px;
     }
     .header-text h1{
-        font-size: 35px;
-        font-family:fantasy;
-        font-weight: 350;
+        font-size: 27px;
+        font-family: "Merriweather", serif;
+        font-weight: 1000;
     }
     .header-text h1 span{
-        font-family:fantasy;
+        font-family: "Merriweather", serif;
     }
     .button a{
-        margin-top: 620px;
+        margin-top: 520px;
         display: inline-block;
         margin-left: 5px;
     }

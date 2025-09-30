@@ -384,9 +384,8 @@ nav ul li a:hover::after{
     width:attr(data-progress);
 }
 .copyright{
-  position: relative;
-  top: 195px;
-  text-align: center;
+  align-items: end;
+  
   font-size: 10px;
   color: white;
 }
