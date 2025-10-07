@@ -39,6 +39,13 @@
    
     <meta name="theme-color" content="#1976d2">
 </head>
+<script>
+    // Check if the intro has been played in this session
+    if (!sessionStorage.getItem('introPlayed')) {
+        // Redirect to the intro page if not played
+        window.location.href = 'intro.html';
+    }
+</script>
 
 <body> 
 <div id="header">
