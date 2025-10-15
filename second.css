@@ -135,9 +135,9 @@ nav ul li a:hover::after{
     display: block;
 }
 .scrolling-banner {
-  margin-left: 760px;
+   justify-content: center;
   margin-top: 60px;
-  position: relative;
+  position: center;
   
   
   transform: translateX(-50%);
